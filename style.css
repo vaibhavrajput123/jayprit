@@ -1,0 +1,69 @@
+:root {
+    --glow-color: hsl(186 100% 69%);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+
+  img{
+    position: relative;
+    right: 50px;
+    height: auto;
+    border-radius: 50%;
+
+    filter: drop-shadow(5px 10px 15px red);
+  }
+  
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleaway", sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 1em;
+  }
+  .glowing-btn{
+    width: 430px;
+    height: 100px;
+    background-color: black;
+    
+  
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {box-shadow: 10px 20px 150px blue ;}
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
